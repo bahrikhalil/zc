@@ -22,7 +22,7 @@ public class EventController {
     }
 
 
-    @GetMapping("/all")
+    @GetMapping("/allevents")
     public  List<Event> getAllEvent(){
         return eventService.getAllEvent();
     }
