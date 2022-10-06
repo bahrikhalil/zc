@@ -45,7 +45,7 @@ public class EventController {
     }
 
 
-    @PostMapping("/eventingnow/{eventName}")
+    @PostMapping("/eventing/{eventName}")
     public  void assignInfoToEvent( @PathVariable  String eventName , @RequestBody  EventInfo eventInfo){
           eventService.assignInfoToEvent(eventName, eventInfo);
     }
